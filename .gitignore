@@ -1,10 +1,5 @@
 # Based on https://raw.githubusercontent.com/github/gitignore/main/Node.gitignore
 
-# Ignore all TypeScript files except specific ones
-*.ts
-!index.ts
-!character.ts
-
 # Logs
 
 logs

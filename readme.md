@@ -1,6 +1,6 @@
 # eliza-starter-bun
 
-Report Summary: Bun Package Manager and Runtime variant of AI16Z Eliza-Starter[link](https://github.com/elizaOS/eliza-starter), unit intended to reduce the need for installation of external dependencies, include native [build](https://bun.sh/docs/bundler), and improve deployment user-experience
+Summary: Bun Package Manager and Runtime variant of AI16Z Eliza-Starter [link](https://github.com/elizaOS/eliza-starter), unit intended to reduce the need for installation of external dependencies, include native [build](https://bun.sh/docs/bundler), and improve deployment user-experience
 
 > Start basic, work backwards
 
