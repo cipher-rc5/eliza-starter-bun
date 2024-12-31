@@ -1,0 +1,35 @@
+{
+  "name": "eliza-starter-bun",
+  "version": "0.1.1",
+  "type": "module",
+  "module": "src/index.ts",
+  "exports": {
+    ".": {
+      "import": "./src/index.ts"
+    }
+  },
+  "scripts": {
+    "build": "bun build ./src/index.ts --outdir dist --target node --format esm",
+    "start": "bun run src/index.ts",
+    "start:dev": "bun --watch run src/index.ts",
+    "start:all": "bun run src/services/all.ts",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@ai16z/client-direct": "v0.1.4-alpha.3",
+    "@ai16z/client-twitter": "v0.1.4-alpha.3",
+    "@ai16z/eliza": "v0.1.4-alpha.3",
+    "@ai16z/plugin-solana": "0.1.6",
+    "dprint": "^0.48.0",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.1.14",
+    "@types/node": "^22.10.2",
+    "bun-types": "latest",
+    "typescript": "^5.6.3"
+  },
+  "engines": {
+    "bun": ">=1.0.0"
+  }
+}
