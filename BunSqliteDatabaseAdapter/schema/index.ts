@@ -1,4 +1,4 @@
-// schema/index.ts
+// BunSqliteDatabaseAdapter/schema/index.ts
 export const DATABASE_SCHEMA = `
     PRAGMA foreign_keys=ON;
 

@@ -1,7 +1,6 @@
-import { type DirectClient, DirectClientInterface } from '@ai16z/client-direct';
+import { DirectClientInterface, type DirectClient } from '@ai16z/client-direct';
 import { TwitterClientInterface } from '@ai16z/client-twitter';
-import { AgentRuntime, CacheManager, Character, defaultCharacter, elizaLogger, IAgentRuntime, ICacheManager, IDatabaseAdapter, ModelProviderName, settings, stringToUuid, validateCharacterConfig } from '@ai16z/eliza';
-// import { solanaPlugin } from '@ai16z/plugin-solana';
+import { AgentRuntime, CacheManager, defaultCharacter, elizaLogger, ModelProviderName, settings, stringToUuid, validateCharacterConfig, type Character, type IAgentRuntime, type ICacheManager, type IDatabaseAdapter } from '@ai16z/eliza';
 import { FarcasterAgentClient } from '@elizaos/client-farcaster';
 import { dirname, join, resolve } from 'path';
 import readline from 'readline';
@@ -208,7 +207,6 @@ export function createAgent(character: Character, db: BunSqliteDatabase, cache: 
     modelProvider: character.modelProvider,
     evaluators: [],
     character,
-    // plugins: character.settings?.secrets?.WALLET_PUBLIC_KEY ? [solanaPlugin] : [], //suspending until reviewing changes to latest package deps
     plugins: [],
     providers: [],
     actions: [],

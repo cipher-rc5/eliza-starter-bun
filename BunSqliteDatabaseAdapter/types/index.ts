@@ -1,4 +1,4 @@
-// BunSqliteDatabaseAdapter/types/index.ts - simple
+// BunSqliteDatabaseAdapter/types/index.ts
 export type UUID = string;
 
 export interface Account {

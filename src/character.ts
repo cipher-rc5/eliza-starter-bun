@@ -1,4 +1,4 @@
-import { Character, ModelProviderName } from '@ai16z/eliza';
+import { ModelProviderName, type Character } from '@ai16z/eliza';
 
 export const character: Character = {
   name: 'stitch',
@@ -16,5 +16,6 @@ export const character: Character = {
   postExamples: [],
   topics: [],
   clients: [],
-  plugins: []
+  plugins: [],
+  people: []
 };

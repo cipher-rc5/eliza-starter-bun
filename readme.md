@@ -33,8 +33,8 @@ bun --version
 3. Clone this repository and navigate to it:
 
 ```sh
-git clone https://github.com/yourusername/liza.git
-cd liza
+git clone https://github.com/cipher-rc5/eliza-starter-bun.git
+cd eliza-starter-bun
 ```
 
 4. Install project dependencies:
