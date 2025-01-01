@@ -3,14 +3,13 @@
   "version": "0.1.1",
   "type": "module",
   "module": "src/index.ts",
-  "exports": {
-    ".": {
-      "import": "./src/index.ts"
-    }
-  },
+  "exports": { ".": { "import": "./src/index.ts" } },
   "scripts": {
+    "prebuild": "mkdir -p data",
     "build": "bun build ./src/index.ts --outdir dist --target node --format esm",
+    "prestart": "mkdir -p data",
     "start": "bun run src/index.ts",
+    "prestart:dev": "mkdir -p data",
     "start:dev": "bun --watch run src/index.ts",
     "start:all": "bun run src/services/all.ts",
     "type-check": "tsc --noEmit"
@@ -21,6 +20,7 @@
     "@ai16z/eliza": "v0.1.4-alpha.3",
     "@ai16z/plugin-solana": "0.1.6",
     "@elizaos/client-farcaster": "^0.1.7-alpha.2",
+    "dotenv": "^16.4.7",
     "dprint": "^0.48.0",
     "zod": "^3.24.1"
   },
@@ -30,7 +30,5 @@
     "bun-types": "latest",
     "typescript": "^5.6.3"
   },
-  "engines": {
-    "bun": ">=1.0.0"
-  }
+  "engines": { "bun": ">=1.0.0" }
 }
